@@ -1,0 +1,10 @@
+
+iframe{
+    padding: 0px;
+}
+.spinner{
+    overflow: hidden;
+}
+.main iframe {
+    margin-top: 0px;
+}

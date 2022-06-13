@@ -1,0 +1,14 @@
+
+
+.modalBtnBody .btn-block{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+.modalBtnBody .btn-block .btn{
+    width:200px;
+    height: 40px;
+}
+.modalBtnBody .longMsg{
+    font-size:18px
+}

@@ -1,0 +1,32 @@
+<div class="app-body  background animated fadeIn">
+
+    <main class="main d-flex align-items-center">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="digfix mx-auto">
+                    <div *ngIf="init.layout" class="c-page-block b-top-block">
+                        <button type="button" class="btn btn-apda-temp shadow-s" >{{init.layout.select_page.btn1[la.language]}}</button>
+                        <button type="button" class="btn btn-apda-temp shadow-s" >{{init.layout.select_page.btn2[la.language]}}</button>
+                    </div>
+                    <div class="card mx-8">
+                        <div class="card-body p-4">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="background-image left-img" >
+                                    <div *ngIf="init.layout" class="sele-link"
+                                        [routerLink]="myMajorAppLink" [queryParams]="{lang: this.la.language }" >
+                                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                                        <h2>{{init.layout.select_page.myMajorAppTitle[la.language]}}</h2></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

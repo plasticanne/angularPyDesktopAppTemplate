@@ -1,0 +1,19 @@
+
+<div  [ngClass]="{'modal-backdrop':true,'empty-modal':'true','fade':true, 'in': modalsService.isShowEmptyModal,'show':modalsService.isShowEmptyModal  }"></div>
+<modalBtn-component #popoutBlock [hasHeader]="false" (isHidden)="onHidden($event)">
+
+    <div modalBtnHeader>
+    </div>
+
+    <div modalBtnBody class="modalBtnBody">
+        <div class="">
+            <div class="longMsg">
+                {{popoutMsg}}
+            </div>
+        </div>
+    </div>
+    <div modalBtn>
+    </div>
+
+</modalBtn-component>
+

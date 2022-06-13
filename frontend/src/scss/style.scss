@@ -1,0 +1,49 @@
+// If you want to override variables do it here
+@import "variables";
+$breakpoint-mobile-up:10px !important ;
+// Import styles
+@import "~@coreui/coreui/scss/coreui";
+
+// If you want to add something do it here
+@import "custom";
+@import url("../assets/bootstrap/css/bootstrap.min.css");
+
+@import url("../assets/primeng/themes/bootstrap/theme");
+@import url("../assets/primeng/primeng.min.css");
+$breakpoint-mobile-up:10px!important ;
+
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular');
+}
+@font-face{
+    font-family: custom-sans-serif;
+    src: local("Heiti TC"), local("Microsoft JhengHei");
+    unicode-range: U+4E00-9FFF;
+}
+
+@font-face{
+    font-family: custom-sans-serif;
+    src:  local("Helvetica"),local("Segoe UI"),local("Arial");
+    unicode-range: U+00-024F;
+}
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+

@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "C:\\Users\\major\\Anaconda3\\envs\\minepez-Dev\\python.exe",
+    "python.linting.mypyEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "angular.enable-strict-mode-prompt": false
+}

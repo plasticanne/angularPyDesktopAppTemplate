@@ -1,0 +1,35 @@
+{
+    "dashboard": {
+        "title": "Dashboard",
+        "meta": [
+            { "name": "url", "itemprop": "url", "property": "og:url", "content": "" },
+            { "name": "robots", "content": "index,follow" },
+            { "name": "keywords", "content": "" },
+            { "name": "title", "itemprop": "name", "property": "og:title", "content": "" },
+            { "name": "description", "itemprop": "description", "property": "og:description", "content": "" },
+            { "name": "image", "itemprop": "image", "property": "og:image", "content": "" }
+        ]
+    },
+    "404error_page": {
+        "title": "404, page not find",
+        "meta": [
+            { "name": "url", "itemprop": "url", "property": "og:url", "content": "" },
+            { "name": "robots", "content": "index,follow" },
+            { "name": "keywords", "content": "" },
+            { "name": "title", "itemprop": "name", "property": "og:title", "content": "page not find" },
+            { "name": "description", "itemprop": "description", "property": "og:description", "content": "page not find" },
+            { "name": "image", "itemprop": "image", "property": "og:image", "content": "" }
+        ]
+    },
+    "500error_page": {
+        "title": "500, temporarily unavailable",
+        "meta": [
+            { "name": "url", "itemprop": "url", "property": "og:url", "content": "" },
+            { "name": "robots", "content": "index,follow" },
+            { "name": "keywords", "content": "" },
+            { "name": "title", "itemprop": "name", "property": "og:title", "content": "temporarily unavailable" },
+            { "name": "description", "itemprop": "description", "property": "og:description", "content": "temporarily unavailable" },
+            { "name": "image", "itemprop": "image", "property": "og:image", "content": "" }
+        ]
+    }
+}

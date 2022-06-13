@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "importHelpers": true,
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "./",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "mapRoot": "./",
+    "module": "es2015",
+    "types": [],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+          "@_packages/*": ["app/packages/*"],
+          "@_views/*": ["app/views/*"],
+          "@_utils/*": ["app/utils/*"],
+          "@coreui/*": ["../node_modules/@coreui/*"]
+        }
+  }
+}

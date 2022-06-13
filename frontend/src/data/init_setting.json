@@ -1,0 +1,7 @@
+{
+    "ART_PARENT_URL": "assets/img/",
+    "OPENID_ICON": {
+        "facebook": "assets/img/social/openID_icon_01.svg",
+        "googlePlus": "assets/img/social/openID_icon_02.svg"
+    }
+}

@@ -1,0 +1,10 @@
+.log{
+
+    height:100px;
+    width:600px;
+    overflow-y: scroll;
+    border: 1px solid #a6a6a6;
+    border-radius: 5px;
+    margin: 0px 0px 0 15px;
+    padding: 5px 10px;
+}

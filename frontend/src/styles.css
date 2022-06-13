@@ -1,0 +1,328 @@
+@import "~jsoneditor/dist/jsoneditor.min.css";
+.jsoneditor {
+    background-color: #fff;
+}
+html{
+    scroll-behavior: auto;
+}
+*::-webkit-scrollbar-track
+{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	border-radius: 5px;
+	background-color: rgb(225, 225, 225);
+}
+
+*::-webkit-scrollbar
+{
+	width: 12px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+	background-color: rgba(184,177,248,1);
+}
+:focus {
+
+    outline: -webkit-focus-ring-color auto 0px;
+    outline-style: none;
+}
+
+body{
+    background-color:#fff;
+    min-width: 1024px;
+    min-height: 768px;
+    font-family: "Segoe UI","Helvetica" ,"Heiti TC", "Microsoft JhengHei" !important;
+    /*font-family: custom-sans-serif !important;*/
+    font-size: 15px;
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    /*padding: 0px;*/
+
+
+}
+body .card{
+    background-color: #f9f9f9;
+}
+
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item.ui-state-highlight,
+body .ui-dropdown-panel .ui-dropdown-items .ui-dropdown-item-group.ui-state-highlight {
+    color: #337ab752;
+    background-color: #337ab752 ;
+}
+body .ui-widget {
+    font-family: "Segoe UI","Helvetica" ,"Heiti TC", "Microsoft JhengHei" !important;
+    /*font-family: custom-sans-serif !important;*/
+    font-size: 15px;
+    text-decoration: none;
+}
+.form-control{
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5c6873;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e4e7ea;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+    color: #5c6873;
+    background-color: #fff;
+    border-color: #c5dad3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(18,168,223,0.25);
+}
+
+body .ui-inputtext:enabled:focus:not(.ui-state-error) {
+    color: #5c6873;
+    background-color: #fff;
+    border-color: #c5dad3;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(18,168,223,0.25);
+}
+
+body .ui-inputtext {
+    display: block;
+    padding: 0.375rem 0.75rem;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5c6873;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e4e7ea;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+body .ui-inputtext.ng-dirty.ng-invalid, body p-dropdown.ng-dirty.ng-invalid > .ui-dropdown, body p-autocomplete.ng-dirty.ng-invalid > .ui-autocomplete > .ui-inputtext, body p-calendar.ng-dirty.ng-invalid > .ui-calendar > .ui-inputtext, body p-chips.ng-dirty.ng-invalid > .ui-inputtext, body p-inputmask.ng-dirty.ng-invalid > .ui-inputtext, body p-checkbox.ng-dirty.ng-invalid .ui-chkbox-box, body p-radiobutton.ng-dirty.ng-invalid .ui-radiobutton-box, body p-inputswitch.ng-dirty.ng-invalid .ui-inputswitch, body p-listbox.ng-dirty.ng-invalid .ui-inputtext, body p-multiselect.ng-dirty.ng-invalid > .ui-multiselect, body p-spinner.ng-dirty.ng-invalid > .ui-inputtext, body p-selectbutton.ng-dirty.ng-invalid .ui-button, body p-togglebutton.ng-dirty.ng-invalid .ui-button {
+    border: inherit;
+}
+.shadow-s{
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+}
+.shadow-o{
+    box-shadow: 0 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+
+
+.btn{
+    transition-property:background,border;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    opacity: 1;
+    text-align: center;
+    font-size: 15px;
+}
+
+.btn-apda-temp {
+    background: no-repeat padding-box rgba(184,177,248,1);
+    border: 0 solid rgba(184,177,248,1);
+    color: rgba(255,255,255,1);
+}
+
+.btn-apda-temp.disabled, .btn-apda-temp:disabled {
+    color: #fff;
+    background-color: rgba(86, 134, 149,0.5);
+    border: 0 solid rgba(184,177,248,0.5);
+}
+.btn-apda-temp:focus, .btn-apda-temp.focus {
+    color: #fff;
+    background: no-repeat padding-box rgba(178,131,30,1);
+    border: 0 solid rgba(178,131,30,1);
+}
+.btn-apda-temp:hover {
+    color: #fff;
+    background: no-repeat padding-box rgba(178,131,30,1);
+    border: 0 solid rgba(178,131,30,1);
+}
+.btn-apda-temp.disabled, .btn-apda-temp:disabled:hover {
+    color: #fff;
+    background: no-repeat padding-box rgba(178,131,30,0.5);
+    border: 0 solid rgba(178,131,30,0.5);
+}
+
+.btn-red {
+    color: #813838;
+    background-color: #fee2e1;
+    border: 2px solid #ff8b8b;
+}
+
+.btn-red.disabled,
+.btn-red:disabled {
+    background-color: rgba(255, 139, 139,0.5);
+}
+.btn-red:focus, .btn-red.focus {
+    background-color: rgb(255, 139, 139);
+}
+.btn-red:hover {
+    background-color: rgb(255, 139, 139);
+}
+.btn-red.disabled, .btn-red:disabled:hover {
+    background: no-repeat padding-box rgba(255, 139, 139,0.5);
+}
+
+.bg-apda-temp{
+    background: no-repeat padding-box rgba(184,177,248,1) !important;
+    color: #fff;
+}
+
+
+
+
+
+.steps-progress li.steps-alert:before {
+    color: #813838;
+    background-color: #fee2e1;
+    border-color: #ff8b8b;
+}
+
+
+.form-control::placeholder {
+    color: #bdbdbd;
+}
+
+
+body .ui-togglebutton .ui-button-icon-left {
+    color:#fff !important;
+}
+
+body .ui-togglebutton,
+body .ui-togglebutton.ui-state-focus,
+body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active):hover,
+body .ui-togglebutton:not(.ui-state-disabled):not(.ui-state-active).ui-state-focus,
+body .ui-togglebutton:hover {
+    margin: 0;
+    color: #ffffff;
+    background-color: rgba(184,177,248,1);
+    border: 1px solid rgba(184,177,248,1);
+    font-size: 15px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16);
+    opacity: 1;
+    text-align: center;
+}
+
+
+
+body .ui-togglebutton.ui-state-active,
+body .ui-togglebutton.ui-state-active.ui-state-focus,
+body .ui-togglebutton.ui-state-active:hover {
+    background-color: rgba(83, 32, 201,1);
+    border-color: rgba(23,162,184,1);
+    color: #fff;
+    box-shadow: 0 0px 0px rgba(0,0,0,.16);
+}
+
+body .ui-togglebutton.ui-state-disabled,
+body .ui-togglebutton.ui-widget:disabled,
+body .ui-togglebutton.ui-state-disabled .ui-chkbox-icon  {
+    cursor: not-allowed !important;
+}
+body .ui-togglebutton.ui-state-disabled,
+body .ui-togglebutton.ui-state-disabled:hover{
+    color: #fff;
+    background-color: rgba(184,177,248, 0.5);
+    border: 1px solid rgba(184,177,248,0.5);
+    opacity: 0.65;
+    box-shadow: 0 0px 0px rgba(0,0,0,.16);
+}
+body .ui-togglebutton.ui-state-disabled.ui-state-active,
+body .ui-togglebutton.ui-state-disabled.ui-state-active:hover,
+body .ui-togglebutton.ui-state-disabled.ui-state-active:disabled {
+    color: #fff;
+    background-color: rgba(83, 32, 201,0.5);
+    border-color: rgba(23,162,184,0.5);
+    opacity: 0.65;
+    box-shadow: 0 0px 0px rgba(0,0,0,.16);
+}
+
+
+
+
+
+
+
+body .ui-chkbox .ui-chkbox-box {
+    border: 1px solid #dadada;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+body .ui-chkbox .ui-chkbox-box.ui-state-active {
+    border-color: rgba(184,177,248,1);
+    background-color: rgba(184,177,248,1);
+    color: #ffffff;
+}
+
+
+
+
+@media (min-width: 768px){
+    .navbar {
+        border-radius: 0px;
+    }
+}
+.navbar {
+    border-radius: 0px;
+    border: 0px solid transparent;
+    border-bottom: 0 solid #3d3d3d;
+    box-shadow: 0 1px 3px rgba(0,0,0,.16);
+}
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #ffffff;
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+    cursor: not-allowed;
+}
+body .ui-chkbox-icon{
+    width: 100%;
+    height: 100%;
+}
+body .ui-chkbox {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0;
+}
+
+.ui-dropdown.ui-state-disabled .ui-dropdown-trigger, .ui-dropdown.ui-state-disabled .ui-dropdown-label {
+    cursor: not-allowed;
+}
+body .ui-toast .ui-toast-message.ui-toast-message-error {
+    /* background-color: #ff8b8b;
+    border: 1px solid #ff8b8b;
+    color: #212121; */
+    color: #813838;
+    background-color: #fee2e1;
+    border-color: #fdd6d6;
+}
+.alert-danger {
+    color: #813838;
+    background-color: #fee2e1;
+    border-color: #fdd6d6;
+}
+
+.ui-progressbar-determinate .ui-progressbar-value-animate {
+    transition: none;
+}
+
+body .ui-tooltip .ui-tooltip-text{
+    background-color: #f9f9f9;
+}
+/* .ui-progressbar-determinate .ui-progressbar-value-animate {
+    transition: width 0.1s ease-in-out;
+} */

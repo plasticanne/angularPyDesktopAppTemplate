@@ -1,0 +1,121 @@
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar-track,
+.mainScroll::-webkit-scrollbar-track
+{
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	border-radius: 5px;
+	background-color: rgb(225, 225, 225);
+}
+
+body::-webkit-scrollbar,
+.mainScroll::-webkit-scrollbar
+{
+	width: 12px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-thumb,
+.mainScroll::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);*/
+	background-color: rgba(184,177,248,1);
+}
+#url{
+
+}
+#dash-container{
+    /* background: white; */
+    padding: 0px 0 40px 0;
+    font-family: "Segoe UI","Helvetica" ,"Heiti TC", "Microsoft JhengHei" ;
+}
+.body-block{
+    background: rgba(226, 213, 186, 1);
+    padding: 20px 20px 40px 20px;
+    font-family: "Segoe UI","Helvetica" ,"Heiti TC", "Microsoft JhengHei" ;
+}
+.dataFrame-title{
+    font-size: 20px;
+}
+.graph{
+    max-width: 1200px;
+    min-width: 900px;
+    padding: 40px 40px 0 40px;
+
+}
+
+
+.feature-table{
+    padding: 40px 40px 0 40px;
+}
+.enumerate-table{
+    padding: 40px 40px 0 40px;
+}
+.reports{
+    display:flex;
+    padding: 40px 20px 0 40px;
+}
+
+.report-table{
+    width: auto;
+    margin:0 40px 0 0;
+}
+.dataframe th,
+.dataframe td{
+    padding: 2px;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(211, 211, 211);
+}
+.dataframe td{
+    background-color: white;
+}
+.dataframe th{
+    background-color: #fafafa;
+}
+
+.dataframe{
+    background-clip: padding-box;
+    padding: 2px;
+    white-space: nowrap;
+    height: 30px;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+
+}
+.dataFrame-wrap{
+    overflow: auto;
+    max-height: 600px;
+}
+
+.report-table th,
+.report-table td,
+.feature-table th,
+.feature-table td,
+.enumerate-table th,
+.enumerate-table td{
+    padding: 5px !important;
+    text-align: left !important;
+}
+
+
+.feature-table .previous-next-container,
+.enumerate-table .previous-next-container {
+    display: inline-block;
+    float: none;
+    padding: 5px 0px;
+    position: absolute;
+    top: 0;
+}
+
+.feature-table .dash-spreadsheet-container,
+.enumerate-table .dash-spreadsheet-container {
+    overflow-x: scroll;
+    border: 1px solid #c5c5c5;
+}

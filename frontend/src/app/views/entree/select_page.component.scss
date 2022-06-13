@@ -1,0 +1,61 @@
+
+
+.card{
+    border-radius: 15px;
+}
+.digfix{
+    width: 80%;
+    min-width: 910px;
+}
+.sele-link{
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .2s ease-in;
+
+}
+.sele-link:hover,
+.sele-link:focus{
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+
+}
+.left-img{
+    background-position: left;
+    background-size: cover;
+
+}
+.background-image{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(41,87,71,1);
+}
+.mid-img{
+    background-position: center;
+    background-size: cover;
+}
+.right-img{
+    background-position: right;
+    background-size: cover;
+}
+.fa{
+    color: rgba(177, 177, 177,0.6);
+    font-size: 136px;
+    transition: all .2s ease-in;
+}
+.sele-link:hover *,
+.sele-link:focus *{
+    color: white;
+
+}
+.sele-link h2 {
+    transition: all .2s ease-in;
+    color: rgba(177, 177, 177,0.6);
+    font-size: 28px;
+    margin-top: 10px;
+}

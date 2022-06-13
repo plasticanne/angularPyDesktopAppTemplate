@@ -1,0 +1,10 @@
+{
+    "select_page":{
+        "btn1":{"en":"Button 1","zh_hant":"按鈕1","jp":"","zh_hans":""},
+        "btn2":{"en":"Button 1","zh_hant":"按鈕2","jp":"","zh_hans":""},
+        "back_main_page":{"en":"Back","zh_hant":"回主頁","jp":"","zh_hans":""},
+        "myMajorAppTitle":{"en":"My Major App","zh_hant":"My Major App","jp":"","zh_hans":""}
+    }
+    
+    
+}

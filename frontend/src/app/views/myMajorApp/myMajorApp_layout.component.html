@@ -1,0 +1,38 @@
+  <!--<app-header [navbarBrandFull]="{src: 'assets/img/logo.png', width: 30, height: 30, alt: 'Logo'}">-->
+
+<app-header >
+
+  <ul left class="nav  ml-left">
+
+    <li>
+    <p-dropdown class="lang" name="a0" [options]="la.options"  [ngModel]="la.language"  (onChange)="selectLang($event)" ></p-dropdown>
+    </li>
+
+
+  </ul>
+
+  <ul right class="nav navbar-nav ml-right">
+    <li >ver: {{init.version}}</li>
+    <li>
+        <button  class="btn nav-header-btn" (click)="exec_new_intance()"><i class="fa fa-external-link" aria-hidden="true"></i></button>
+    </li>
+  </ul>
+</app-header>
+<myMajorApp-modals-component></myMajorApp-modals-component>
+<div class="body-background" >
+<div [ngClass]="{'app-body':true,'animated':init.animated_fadeIn_enable,'fadeIn':init.animated_fadeIn_enable,'mainScroll':true}" mainScroll>
+
+  <!-- Main content -->
+  <div class="main">
+
+    <div class="container-fluid">
+      <myMajorApp-main-component></myMajorApp-main-component>
+
+    </div><!-- /.container-fluid -->
+
+  </div>
+
+
+</div>
+</div>
+

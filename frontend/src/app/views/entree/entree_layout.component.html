@@ -1,0 +1,11 @@
+<div class="main">
+<entree-modals-component></entree-modals-component>
+<router-outlet></router-outlet>
+<div class="dropdown-block">
+    <p-dropdown name="a0" [options]="la.options"  [ngModel]="la.language"  (onChange)="selectLang($event)" ></p-dropdown>
+</div>
+<div class="ml-right version">
+    ver: {{init.version}}
+</div >
+</div >
+

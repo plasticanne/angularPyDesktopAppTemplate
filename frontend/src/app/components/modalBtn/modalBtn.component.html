@@ -1,0 +1,17 @@
+<div bsModal #childModal="bs-modal" [config]="{ backdrop: 'static',keyboard:keyboard }" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="false" (onHidden)="onHidden($event)">
+    <div class="modal-dialog ex-modal">
+        <div class="modal-content">
+            <div *ngIf="hasCloseBtn"  class="close" label="Close" (click)="hideChildModal()">
+                <span aria-hidden="true">&times;</span>
+            </div>
+            <div *ngIf="hasHeader" class="modal-header">
+                <ng-content select="[modalBtnHeader]"></ng-content>
+
+            </div>
+            <div class="modal-body">
+                <ng-content select="[modalBtnBody]"></ng-content>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-content select="[modalBtn]"></ng-content>

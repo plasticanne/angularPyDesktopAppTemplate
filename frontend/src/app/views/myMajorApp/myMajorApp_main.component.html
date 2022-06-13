@@ -1,0 +1,32 @@
+
+<div (window:resize)="onResize($event)" #plotBlock>
+    <div class="card mx-8">
+
+        <div class="card-header bg-enosim text-center  p-4">
+            <h2  >{{data.layout.plot.uplot[la.language]}}</h2>
+        </div>
+
+        <div class="card-body p-4">
+
+
+             <div class="chart-wrapper" #baseChart></div>
+
+
+
+        </div>
+    </div>
+
+    <div class="card mx-8">
+        <div class="card-header bg-enosim text-center  p-4">
+            <h2 *ngIf="data.layout">{{data.layout.plot.dash[la.language]}}</h2>
+        </div>
+        <div class="card-body p-4">
+
+            <dash-component  *ngIf="data.dash_url" [src]="init.API_HOST+data.dash_url" [width]="width" [height]="height" ></dash-component>
+
+
+
+        </div>
+    </div>
+
+</div>

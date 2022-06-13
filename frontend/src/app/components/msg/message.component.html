@@ -1,0 +1,5 @@
+<div class="log" #container>
+    <ng-container *ngFor="let log of message; let i = index">
+        <p>emit control event: {{log.date|date:'HH:mm:ss'}} - {{log.value}}</p>
+    </ng-container>
+</div>

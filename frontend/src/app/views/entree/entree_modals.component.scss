@@ -1,0 +1,19 @@
+.title {
+    color: #0099DA;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.inputMsg {
+    margin: 20px 0;
+}
+
+.longMsg {
+    word-break: break-word;
+}
+.empty-modal{
+    z-index: 1500;
+    display: none;
+    overflow: hidden;
+}
